@@ -1,8 +1,8 @@
 # Telegram Bot to Google Calendar Bridge
-[🇬🇧 English](#english) | [🇮🇹 Italiano](#italiano)
+<a href="#GB">🇬🇧 English</a> | <a href="#IT">🇮🇹 Italiano</a>
 
 ---
-## 🇬🇧 English
+## <p id="GB">🇬🇧 English</p>
 ### Summary
 A powerful Telegram bot that integrates with Google Calendar, allowing users to manage events through natural language. The bot uses Google's Generative AI to parse event details and automatically adds them to your calendar.
 
@@ -72,7 +72,7 @@ Here's the bot in action adding an event on the fly:
 ![Demo del Bot](assets/demo_bot.gif)
 
 ---
-## 🇮🇹 Italiano
+## <p id='IT'>🇮🇹 Italiano</p>
 ### Riepilogo
 Un potente bot Telegram che si integra con Google Calendar, permettendo di gestire gli eventi tramite linguaggio naturale. Il bot utilizza l'AI generativa di Google per interpretare i dettagli degli eventi e aggiungerli automaticamente al calendario.
 
