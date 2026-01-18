@@ -16,8 +16,8 @@ client = genai.Client(api_key=google_ai_api_key)
 response = client.models.generate_content(
     # model to use
     model='gemini-2.5-flash',
-    # prompt to use
-    contents=types.Part.from_text(text='Quanto fa 2 + 2?'),
+    # Test prompt for basic math operation
+    contents=types.Part.from_text(text='What is 2 + 2?'),
 )
 
 print(response.text)
