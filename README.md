@@ -28,7 +28,7 @@ A powerful Telegram bot that integrates with Google Calendar, allowing users to 
 ### ⚡ Quick Start
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/telegram-to-calendar.git
+   git clone https://github.com/gizano/telegram-to-calendar.git
    cd telegram-to-calendar
    ```
 
@@ -98,7 +98,7 @@ Un potente bot Telegram che si integra con Google Calendar, permettendo di gesti
 ### ⚡ Avvio Rapido
 1. **Clona il repository**
    ```bash
-   git clone https://github.com/tuoutente/telegram-to-calendar.git
+   git clone https://github.com/gizano/telegram-to-calendar.git
    cd telegram-to-calendar
    ```
 
