@@ -16,7 +16,6 @@ Comandi disponibili:
 - /start - Mostra questo menù
 
 - /calendar_add (titolo - categoria - da inizio a fine) - Aggiungi nuovo evento al calendario
-- /calendar_show X - Mostra i prossimi X eventi dai calendari disponibili
 
 - (no comando) - Ripetere messaggio inviato (Troubleshooting)
 """
