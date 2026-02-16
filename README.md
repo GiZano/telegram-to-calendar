@@ -1,141 +1,163 @@
-# Telegram Bot to Google Calendar Bridge
-<a href="#GB">🇬🇧 English</a> | <a href="#IT">🇮🇹 Italiano</a>
+<div align="center">
+
+# 🤖 Telegram to Google Calendar Bridge
+
+### AI-Powered Natural Language Event Assistant
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white)
+![Telegram API](https://img.shields.io/badge/Telegram_Bot_API-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Calendar_API-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
+
+<br>
+
+<a href="#english">🇬🇧 English</a> | <a href="#italiano">🇮🇹 Italiano</a>
+
+</div>
 
 ---
-## <p id="GB">🇬🇧 English</p>
-### Summary
-A powerful Telegram bot that integrates with Google Calendar, allowing users to manage events through natural language. The bot uses Google's Generative AI to parse event details and automatically adds them to your calendar.
 
-### 🚀 Features
-- **Natural Language Processing**: Add events using conversational language
-- **Multi-Calendar Support**: Manage multiple calendars with custom categories
-- **Smart Event Parsing**: Automatically extracts dates, times, and event details
-- **Real-time Updates**: Immediate calendar synchronization
-- **Customizable Categories**: Automatic color-coding for different event types
+<h2 id="english">🇬🇧 English</h2>
+
+### 📖 About The Project
+A powerful Telegram bot that integrates seamlessly with Google Calendar, allowing users to manage events through natural language. By leveraging Google's Generative AI (Gemini), the bot intelligently parses conversational input, extracts event details, and automatically schedules them into your calendar.
+
+### 🚀 Key Features
+* **🧠 Natural Language Processing:** Add events using everyday conversational language without strict formatting rules.
+* **📅 Multi-Calendar Support:** Manage multiple calendars and automatically route events based on custom categories.
+* **⚡ Smart Event Parsing:** Automatically extracts dates, times, durations, and contextual details.
+* **🔄 Real-time Updates:** Immediate two-way synchronization with your Google Calendar.
+* **🎨 Customizable Categories:** Automatic color-coding for different event types to keep your schedule visually organized.
 
 ### 🛠️ Tech Stack
-- **Backend**: Python 3.12
-- **APIs**: 
-  - Google Calendar API
-  - Telegram Bot API
-  - Google Generative AI (Gemini)
-- **Key Libraries**:
-  - `python-telegram-bot` - Telegram bot framework
-  - `google-api-python-client` - Google Calendar integration
-  - `google-genai` - Natural language processing
-  - `python-dotenv` - Environment management
+* **Backend:** Python 3.12
+* **APIs:** Google Calendar API, Telegram Bot API, Google Generative AI
+* **Core Libraries:**
+  * `python-telegram-bot` (Telegram framework)
+  * `google-api-python-client` (Calendar integration)
+  * `google-genai` (NLP and AI parsing)
+  * `python-dotenv` (Environment management)
+
+### 🎥 Live Demo
+Here's the bot in action, parsing natural language and adding an event on the fly:
+
+<div align="center">
+  <img src="assets/demo_bot.gif" alt="Bot Demo" width="80%" />
+</div>
 
 ### ⚡ Quick Start
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/gizano/telegram-to-calendar.git
-   cd telegram-to-calendar
-   ```
 
-2. **Set up environment**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your credentials
-   ```
+**1. Clone the repository**
+```bash
+git clone https://github.com/gizano/telegram-to-calendar.git
+cd telegram-to-calendar
+```
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+**2. Set up environment**
+```bash
+cp .env.example .env
+# Edit .env with your personal credentials
+```
 
-4. **Configure Google Cloud**
-   - Enable Google Calendar API
-   - Create a Service Account and download credentials as `credentials.json`
-   - Share your calendar with the service account email
+**3. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-5. **Run the bot**
-   ```bash
-   python main.py
-   ```
+**4. Configure Google Cloud**
+* Enable the Google Calendar API in your GCP Console.
+* Create a Service Account and download credentials as `credentials.json`.
+* Share your target Google Calendar with the service account email.
 
-### 📝 Configuration
-- `TELEGRAM_BOT_TOKEN`: Your Telegram bot token
-- `GOOGLE_AI_API_KEY`: Google Generative AI API key
-- `GOOGLE_EMAIL`: Your Google account email
-- `CALENDAR_ID`: Default Google Calendar ID
+**5. Run the bot**
+```bash
+python main.py
+```
 
-### 📚 Documentation
-- [Google Calendar API Guide](https://developers.google.com/calendar/api/guides/overview)
-- [python-telegram-bot Documentation](https://python-telegram-bot.org/)
-- [Google Generative AI Docs](https://ai.google.dev/)
+### 📝 Configuration Parameters
+* `TELEGRAM_BOT_TOKEN`: Your Telegram bot token (from BotFather)
+* `GOOGLE_AI_API_KEY`: Google Generative AI API key
+* `GOOGLE_EMAIL`: Your primary Google account email
+* `CALENDAR_ID`: Default Google Calendar ID
 
-
-### 🎥 Demo
-
-Here's the bot in action adding an event on the fly:
-
-![Demo del Bot](assets/demo_bot.gif)
+### 📚 Documentation Links
+* [Google Calendar API Guide](https://developers.google.com/calendar/api/guides/overview)
+* [python-telegram-bot Documentation](https://python-telegram-bot.org/)
+* [Google Generative AI Docs](https://ai.google.dev/)
 
 ---
-## <p id='IT'>🇮🇹 Italiano</p>
-### Riepilogo
-Un potente bot Telegram che si integra con Google Calendar, permettendo di gestire gli eventi tramite linguaggio naturale. Il bot utilizza l'AI generativa di Google per interpretare i dettagli degli eventi e aggiungerli automaticamente al calendario.
 
-### 🚀 Funzionalità
-- **Elaborazione del linguaggio naturale**: Aggiungi eventi usando un linguaggio conversazionale
-- **Supporto a più calendari**: Gestisci più calendari con categorie personalizzate
-- **Analisi intelligente degli eventi**: Estrae automaticamente date, orari e dettagli degli eventi
-- **Aggiornamenti in tempo reale**: Sincronizzazione immediata del calendario
-- **Categorie personalizzabili**: Codifica colore automatica per diversi tipi di eventi
+<h2 id="italiano">🇮🇹 Italiano</h2>
 
-### 🛠️ Tecnologie
-- **Backend**: Python 3.12
-- **API**:
-  - Google Calendar API
-  - Telegram Bot API
-  - Google Generative AI (Gemini)
-- **Librerie principali**:
-  - `python-telegram-bot` - Framework per il bot Telegram
-  - `google-api-python-client` - Integrazione con Google Calendar
-  - `google-genai` - Elaborazione del linguaggio naturale
-  - `python-dotenv` - Gestione delle variabili d'ambiente
+### 📖 Riepilogo del Progetto
+Un potente bot Telegram che si integra perfettamente con Google Calendar, permettendo agli utenti di gestire gli eventi utilizzando il linguaggio naturale. Sfruttando l'AI generativa di Google (Gemini), il bot interpreta in modo intelligente i messaggi conversazionali, estrae i dettagli dell'evento e li pianifica automaticamente nel calendario.
 
-### ⚡ Avvio Rapido
-1. **Clona il repository**
-   ```bash
-   git clone https://github.com/gizano/telegram-to-calendar.git
-   cd telegram-to-calendar
-   ```
+### 🚀 Funzionalità Principali
+* **🧠 Elaborazione del Linguaggio Naturale:** Aggiungi eventi usando frasi colloquiali senza regole di formattazione rigide.
+* **📅 Supporto Multi-Calendario:** Gestisci più calendari e indirizza automaticamente gli eventi in base a categorie personalizzate.
+* **⚡ Parsing Intelligente:** Estrazione automatica di date, orari, durate e dettagli contestuali.
+* **🔄 Sincronizzazione in Tempo Reale:** Aggiornamento immediato e bidirezionale con il tuo Google Calendar.
+* **🎨 Categorie Personalizzabili:** Codifica a colori automatica per distinguere visivamente i vari tipi di eventi.
 
-2. **Configura l'ambiente**
-   ```bash
-   cp .env.example .env
-   # Modifica .env con le tue credenziali
-   ```
-
-3. **Installa le dipendenze**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configura Google Cloud**
-   - Abilita Google Calendar API
-   - Crea un Service Account e scarica le credenziali come `credentials.json`
-   - Condividi il tuo calendario con l'email del service account
-
-5. **Avvia il bot**
-   ```bash
-   python main.py
-   ```
-
-### 📝 Configurazione
-- `TELEGRAM_BOT_TOKEN`: Il token del tuo bot Telegram
-- `GOOGLE_AI_API_KEY`: Chiave API per Google Generative AI
-- `GOOGLE_EMAIL`: La tua email di Google
-- `CALENDAR_ID`: ID del calendario Google predefinito
-
-### 📚 Documentazione
-- [Guida all'API di Google Calendar](https://developers.google.com/calendar/api/guides/overview)
-- [Documentazione python-telegram-bot](https://python-telegram-bot.org/)
-- [Documentazione Google Generative AI](https://ai.google.dev/)
+### 🛠️ Stack Tecnologico
+* **Backend:** Python 3.12
+* **API:** Google Calendar API, Telegram Bot API, Google Generative AI
+* **Librerie Core:**
+  * `python-telegram-bot` (Framework Telegram)
+  * `google-api-python-client` (Integrazione Calendar)
+  * `google-genai` (NLP e Parsing AI)
+  * `python-dotenv` (Gestione variabili d'ambiente)
 
 ### 🎥 Demo
+Ecco il bot in azione mentre interpreta una frase colloquiale e aggiunge un evento al volo:
 
-Ecco il bot in azione mentre aggiunge un evento al volo:
+<div align="center">
+  <img src="assets/demo_bot.gif" alt="Demo del Bot" width="80%" />
+</div>
 
-![Demo del Bot](assets/demo_bot.gif)
+### ⚡ Avvio Rapido
+
+**1. Clona il repository**
+```bash
+git clone https://github.com/gizano/telegram-to-calendar.git
+cd telegram-to-calendar
+```
+
+**2. Configura l'ambiente**
+```bash
+cp .env.example .env
+# Modifica il file .env con le tue credenziali
+```
+
+**3. Installa le dipendenze**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Configurazione Google Cloud**
+* Abilita l'API di Google Calendar dalla tua console GCP.
+* Crea un Service Account e scarica le credenziali nel file `credentials.json`.
+* Condividi il tuo calendario di destinazione con l'indirizzo email del Service Account.
+
+**5. Avvia il bot**
+```bash
+python main.py
+```
+
+### 📝 Parametri di Configurazione
+* `TELEGRAM_BOT_TOKEN`: Il token del tuo bot Telegram (fornito da BotFather)
+* `GOOGLE_AI_API_KEY`: Chiave API per Google Generative AI (Gemini)
+* `GOOGLE_EMAIL`: La tua email principale dell'account Google
+* `CALENDAR_ID`: ID del calendario Google predefinito
+
+### 📚 Riferimenti Ufficiali
+* [Guida API Google Calendar](https://developers.google.com/calendar/api/guides/overview)
+* [Documentazione python-telegram-bot](https://python-telegram-bot.org/)
+* [Documentazione Google Generative AI](https://ai.google.dev/)
+
+---
+<div align="center">
+  
+  **Developed by [GiZano](https://giovanni-zanotti.is-a.dev)**
+  
+</div>
